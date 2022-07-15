@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="hardware">
+    <meta name="description" content="Drakon Company es una compañia dedicada a vender juegos digitales y perifericos">
+
+    {% load static %}
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="{% static 'core/css/estilos.css' %}"> 
+
+    <link rel="stylesheet" href="{% static 'core/cssd/styles.css' %}">
+
+    <link rel="stylesheet" href="{% static 'core/cssd/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'core/cssd/skeleton.css' %}">
+
+    <link rel="icon" href="{% static 'core/imgd/drakon.svg' %}" type="image/x-icon">
+
+    <title>{% block title %}Nosotros{% endblock %} | Drakon!</title>
+</head>
+
+{% block content %}
+<body>
+    <header>
+        <label id="dark-change"></label>
+    </header>
+    <nav class="banner navbar-expand-lg navbar-dark bg-dark">
+        <div class="navbar container-fluid">
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <img class="img-logo-nav" src="{% static 'core/imgd/drakon.svg' %}" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'productos' %}">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'clima' %}">Clima</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'nosotros' %}">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'salir' %}">Cerrar Sesion</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input type="search" placeholder="buscar.." />
+                    <a href="#" class="icon">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </form>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Bienvenido a Drakon!</h1>
+            <p>Los mejores juegos y perifericos del mercado al mejor precio!</p>
+            <div class="reloj">
+                <p class="fecha" id="fecha"></p>
+                <p class="tiempo" id="tiempo"></p>
+            </div>
+        </div>
+    </nav>
+<section class="fondo-card">
+    <div class="card">
+        <div class="card-image"></div>
+        <div class="card-text">
+            <span class="date"> . </span>
+            <h2> <b>Manuel Santana</b> </h2>
+            <p> <b>Soy Manuel Santana, amante de los videojuegos, apasionado en todo lo que hago. ¿Mi mision en
+                    DRAKON? hacer de DRAKON una tienda unica y con una experiencia INOLVIDABLE </b> </p>
+        </div>
+        <div class="card-stats">
+            <div class="stat">
+                <div class="value">Chileno</div>
+                <div class="type"> <b> Nacionalidad </b></div>
+            </div>
+            <div class="stat border">
+                <div class="value">Dark Souls</div>
+                <div class="type"> <b>Juego Favorito</b> </div>
+            </div>
+            <div class="stat">
+                <div class="value"> <b>19</b> </div>
+                <div class="type"> <b>Años</b></div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-image card2"></div>
+        <div class="card-text card2">
+            <span class="date">.</span>
+            <h2> <b> Alfredo Juica </b> </h2>
+            <p> <b>Soy Alfredo Juica, me gusta mucho la computacion. Soy ambicioso, competitivo y siempre con ganas
+                    de mas ¿Mi mision en DRAKON? hacer de DRAKON la mejor tienda web con una identidad UNICA </b>
+            </p>
+        </div>
+        <div class="card-stats card2">
+            <div class="stat">
+                <div class="value">Chileno</div>
+                <div class="type"><b>Nacionalidad</b></div>
+            </div>
+            <div class="stat border">
+                <div class="value">LOL</div>
+                <div class="type"><b>Juego Favorito</b></div>
+            </div>
+            <div class="stat">
+                <div class="value"> <b>19</b> </div>
+                <div class="type"> <b>Años</b> </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-image card3"></div>
+        <div class="card-text card3">
+            <span class="date">.</span>
+            <h2> <b> Ariel Roa </b> </h2>
+            <p> <b>Soy Ariel Roa, un joven perfeccionista, amante de los diseños y de la computacion, ¿Mi mision en
+                    DRAKON? hacer de DRAKON una tienda INOLVIDABLE con un diseño UNICO, hacer de DRAKON algo
+                    INIGUALABLE. </b> </p>
+        </div>
+        <div class="card-stats card3">
+            <div class="stat">
+                <div class="value">Chileno</div>
+                <div class="type"> <b>Nacionalidad</b> </div>
+            </div>
+            <div class="stat border">
+                <div class="value">CSGO</div>
+                <div class="type"> <B>Juego Favorito</B> </div>
+            </div>
+            <div class="stat">
+                <div class="value"><b>21</b></div>
+                <div class="type"><b>Años</b></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- jQuery, Popper, Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+<!-- Script propios -->
+<script src="{% static 'core/js/jqueries.js' %}"></script>
+<script src="{% static 'core/js/javascript.js' %}"></script>
+<script src="{% static 'core/js/jquery-3.6.0.js' %}"></script>
+</body>
+
+</html>
+{% endblock %}
+

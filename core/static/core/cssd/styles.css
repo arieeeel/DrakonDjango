@@ -1,0 +1,155 @@
+
+ .fondo-card {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url("https://i.pinimg.com/originals/fa/dc/b2/fadcb24075acb650de29f258af69d830.gif");
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    } 
+  .card {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: 'Share Tech Mono', monospace;
+    text-align: center;
+ 
+  
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin:30px;
+  }
+  .card-image {
+    grid-area: image;
+    background: url("https://cdn.discordapp.com/attachments/753324833764278312/978439470837796894/B0656285-FDDD-41B2-9067-776039D2D6EF_1_105_c.jpeg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .card-text {
+    color: #fffeff;
+    grid-area: text image;
+    font-family: 'Share Tech Mono', monospace;
+    margin: 0px;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnMTTXwwHyT6B_WsYnFDcGPm3HZjVlXBsqpA&usqp=CAU");
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  .card-text .date {
+    color: rgb(255, 7, 110);
+    font-size:14px;
+  }
+  .card-text p {
+    color: white;
+    font-size:14px;
+    font-weight: 300;
+  }
+  .card-text h2 {
+    margin-top:0px;
+    font-size:28px;
+  }
+  .card-text h3 {
+    margin-top:0px;
+    font-size:12px;
+  }
+  .card-stats {
+    grid-area: stats; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background:url("https://us.123rf.com/450wm/lustreart/lustreart2011/lustreart201100075/159311970-.jpg?ver=6");
+  }
+  .card-stats .stat {
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+  }
+  .card-stats .border {
+    border-left: 1px solid rgb(172, 26, 87);
+    border-right: 1px solid rgb(172, 26, 87);
+  }
+  .card-stats .value{
+    font-size:13px;
+    font-weight: 500;
+  }
+  .card-stats .value sup{
+    font-size:9px;
+  }
+  .card-stats .type{
+    font-size:9px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .card:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+  
+  /*card2*/
+  .card-image.card2 {
+    background: url("https://cdn.discordapp.com/attachments/974362870601101313/978519959414145104/D4A7FBBF-FBE2-4886-9807-FEEBD305A27C.jpg");
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .cardd-text.card2 .date {
+    color: rgb(255, 77, 7);
+  }
+  .card-stats.card2 .border {
+    border-left: 1px solid rgb(185, 67, 20);
+    border-right: 1px solid rgb(185, 67, 20);
+  }
+  .card-stats.card2 {
+    background: url("https://i.pinimg.com/originals/35/4f/06/354f066092b5090f3cd5fe3361d67853.jpg");
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  /*card3*/
+  .card-image.card3 {
+    background: url("https://cdn.discordapp.com/attachments/974362870601101313/978430880869675058/279103021_174460604917174_1894333426168781717_n.jpg");
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .card-text.card3 .date {
+    color: rgb(0, 189, 63);
+  }
+  .card-stats.card3 .border {
+    border-left: 1px solid rgb(14, 122, 50);
+    border-right: 1px solid rgb(14, 122, 50);
+  }
+  .card-stats.card3 {
+    background: url("https://img.freepik.com/foto-gratis/fondo-pared-textura-ladrillo-oscuro_200040-2192.jpg?w=2000");
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+  
+
+  

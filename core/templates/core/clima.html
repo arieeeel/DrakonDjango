@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Clima{% endblock %}
+
+{% block content %}
+<article>
+    <div class="container mt-2 bg-dark py-5 text-white text-center">
+        <h1>Clima Actual</h1>
+    </div>
+    <div class="container py-4">
+        <div class="icon">
+            <i class="fa-solid fa-cloud"></i>
+        </div>
+        <div class="temp"></div>
+        <div class="summary"></div>
+        <div class="location"></div>
+
+        <button onclick="findMe()">Mostrar mi ubicación</button>
+        <div id="map"></div>
+    </div>
+</article>
+{% endblock %}

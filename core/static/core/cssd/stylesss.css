@@ -1,0 +1,336 @@
+/*REGISTRO USUARIO*/
+:root {
+    --color-dark: #15181f;
+    --color-dark-x: #2d343f;
+    --color-dark-xx: #1f232b;
+    --color-dark-xxx: #000000;
+    --color-light: #ffffff;
+    --color-grey: #f5f6f8;
+    --color-grey-x: #5b646f;
+    --color-neon: #00FFFF;
+    --color-amarillo: #ffc000;
+    --color-azul: #0404B4;
+    --color-verde: #029202;
+    --color-red: #d00000;
+
+}
+
+.reg {
+    font-family: 'Share Tech Mono', monospace;  
+    font-size: 1.1rem;
+    font-weight: 300;
+    background-color: var(--color-grey);
+    color: var(--color-neon);
+    letter-spacing: .05rem;
+    width: 100%;
+}
+
+.bg-ligth {
+    background-color: var(--color-light)!important;
+}
+
+.bg-dark {
+    background-color: var(--color-dark)!important;
+}
+
+.p-6 {
+    padding: 4rem 7rem;
+}
+
+.contact-box {
+    padding: 3rem;
+}
+
+.btn {
+    font-weight: 400;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    min-width: 10rem;
+
+}
+
+.btn_google:hover {
+    cursor: pointer;
+    background: var(--color-dark-xx);
+    box-shadow: 0 0 5px var(--color-amarillo), 0 0 10px var(--color-amarillo), 0 0 20px var(--color-amarillo);
+}
+
+.btn_face:hover {
+    cursor: pointer;
+    background: var(--color-dark-xx);
+    box-shadow: 0 0 5px var(--color-azul), 0 0 10px var(--color-azul), 0 0 20px var(--color-azul);
+}
+
+.btn_reg:hover {
+    cursor: pointer;
+    background: var(--color-dark-xx);
+    box-shadow: 0 0 5px var(--color-verde), 0 0 10px var(--color-verde), 0 0 20px var(--color-verde);
+}
+
+.btn-outline-dark {
+    border: 2px solid var(--color-dark-xx);
+}
+
+.form-control {
+    background-color: var(--color-dark-xx);
+    border: 2px solid var(--color-dark-xx);
+    border-radius: .2rem;
+    padding: 1rem 1rem;
+}
+
+.form-select {
+    background-color: var(--color-dark-xx);
+    border: 2px solid var(--color-dark-xx);
+    border-radius: .2rem;
+    padding: 1rem 1rem;
+    color: var(--color-light);
+    letter-spacing: .05rem;
+}
+
+.btn_reg{
+    transform: translate(-180%,80%);
+
+}
+
+.copyright-text{
+    transform: translate(40%, 700%);
+    text-align: center;
+}
+
+.container {
+    border: 2px solid var(--color-neon);
+    box-shadow: inset 0 0 20px var(--color-neon), 0 0 200px var(--color-neon);
+    color: var(--color-light);
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.font-weight-bold {
+    text-shadow: 0 0 5px var(--color-neon);
+}
+
+.register-bg {
+    background-image: url(https://w0.peakpx.com/wallpaper/150/70/HD-wallpaper-pc-inside-lightning-rgb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.input-group {
+    padding: 0rem 0rem 1rem;
+}
+
+
+/*PRUEBAS DE LINKS*/
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;    
+}
+
+.icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: #ff039a;
+    box-shadow:  0 0 20px #ff039a;
+}
+
+.icon:hover:nth-child(2) {
+    background-color: #1877f2;
+    box-shadow:  0 0 20px #1877f2;
+}
+
+.icon:hover:nth-child(3) {
+    background-color: #a70ca2;
+    box-shadow: 0 0 20px #b901bcef ;
+}
+
+.icon:hover:nth-child(4) {
+    background-color: #1da1f2;
+    box-shadow:  0 0 20px #1da1f2 ;
+}
+
+.icon i {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.7rem;
+}
+
+.formulario {
+    display: table-cell;
+    margin: 0.5rem 0;
+}
+
+form.login {
+    padding: 0rem 0rem 2rem;
+    width: 100%;
+}
+
+.copyright-text1{
+    transform: translate(-0%, 600%);
+    text-align: center;
+}
+
+.container-log {
+    border: 2px solid var(--color-red);
+    box-shadow: inset 0 0 50px var(--color-red), 0 0 200px var(--color-red);
+    color: var(--color-light);
+    height: 100%;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.1rem;
+    font-weight: 300;
+    background-color: var(--color-dark-xx);
+    color: var(--color-light);
+    letter-spacing: .05rem;
+    width: 100%;
+}
+
+.font-weight-bold-login {
+    text-shadow: 0 0 30px var(--color-red), 0 0 50px var(--color-red);
+
+}
+
+.register-bg-login {
+    background-image: url(https://external-preview.redd.it/uiG2xMoLRZLANSWWBYJapE7N6nPxH8HRtTYhd1Keuso.jpg?auto=webp&s=43d308f02245adbb0152c3d539c735308f5756c5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/*LOGIN USUARIO*/
+.formulario__label {
+    display: block;
+    font-weight: 500;
+    padding: 3px;
+    cursor: pointer;
+    text-shadow: 0 0 20px var(--color-red);
+}
+
+.formulario__grupo-input {
+    position: relative;
+}
+
+.formulario__input {
+    color: var(--color-grey);
+    box-shadow: 0 0 5px var(--color-light);
+}
+
+.formulario__input:focus {
+    border: 3px solid var(--color-light);
+    outline: none;
+    box-shadow: 3px 0px 10px var(--color-light);
+}
+
+.formulario__input-error {
+    font-size: 15px;
+    display: none;
+    color: var(--color-light);
+    text-shadow: 0 0 15px var(--color-red), 0 0 30px var(--color-red), 0 0 50px var(--color-red);
+}
+
+.formulario__input-error-activo {
+    display: block;
+}
+
+.formulario__validacion-estado {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+    grid-column: span 2;
+}
+
+.formulario__mensaje {
+    height: 45px;
+    line-height: 45px;
+    background: var(--color-red);
+    padding: 0 15px;
+    border-radius: 3px;
+    box-shadow: 0 0 15px var(--color-red);
+    display: none;
+}
+
+.formulario__mensaje-activo {
+    display: block;
+}
+
+.formulario__grupo-btn-enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario__btn {
+    height: 45px;
+    line-height: 45px;
+    width: 30%;
+    background: transparent;
+    color: var(--color-verde);
+    font-weight: bold;
+    border-color: var(--color-verde); 
+    border-radius: 5rem;
+    transition: .4s ease all;
+}
+
+.formulario__btn:hover {
+    box-shadow: 0 0 5px var(--color-verde), 0 0 10px var(--color-verde), 0 0 20px var(--color-verde);
+}
+
+.formulario__mensaje-exito {
+    font-size: 17px;
+    color: var(--color-verde);
+    text-shadow: 0 0 10px var(--color-verde);
+    display: none;
+}
+
+.formulario__mensaje-exito-activo {
+    display: block;
+}
+
+.container-log{
+    height: 100%;
+}
+
+/*ESTILOS VALIDACIONES*/
+
+.formulario__grupo-correcto
+.formulario__validacion-estado {
+    color: var(--color-verde);
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto 
+.formulario__label {
+    color: var(--color-red);
+    text-shadow: 0 0 5px var(--color-red);
+}
+
+.formulario__grupo-incorrecto
+.formulario__validacion-estado {
+    color: var(--color-red);
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto
+.formulario__input {
+    border: 3px solid var(--color-red);
+    box-shadow: 3px 0px 10px var(--color-red);
+}

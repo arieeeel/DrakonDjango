@@ -1,0 +1,113 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<main>
+    <div id="lista-producto" class="container">
+        <h1 id="encabezado" class="encabezado text-center">Mas Buscados</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="{% static 'core/imgd/farcry.jpg' %}" class="u-full-width" alt="far cry">
+                    <div class="info-card">
+                        <img src="{% static 'core/imgd/estrellas.png' %}" class="u-full-width">
+                        <h4>Far Cry 6</h4>
+                        <p>Plataforma: PS5</p>
+                        <p class="precio">$59.990 <span class="u-pull-right">$49.990</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar Al
+                            Carrito</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'core/imgd/hyperx.jpg' %}" class="u-full-width" alt="Teclado Hyper X">
+                    <div class="info-card">
+                        <img src="{% static 'core/imgd/estrellas.png' %}" class="u-full-width">
+                        <h4>Teclado Alloy Origins Core</h4>
+                        <p>Marca: Hyper X</p>
+                        <p class="precio">$59.990 <span class="u-pull-right">$49.990</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar Al
+                            Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="{% static 'core/imgd/dyinglight.jpg' %}" class="u-full-width" alt="DYING LIGHT 2">
+                    <div class="info-card">
+                        <img src="{% static 'core/imgd/estrellas.png' %}" class="u-full-width">
+                        <h4>Dying Light 2</h4>
+                        <p>Plataforma: PS5</p>
+                        <p class="precio">$79.990 <span class="u-pull-right">$64.990</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar Al
+                            Carrito</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'core/imgd/mouse.jpg' %}" class="u-full-width" alt="god of war">
+                    <div class="info-card">
+                        <img src="{% static 'core/imgd/estrellas.png' %}" class="u-full-width">
+                        <h4>Mouse Gaming G502 Hero</h4>
+                        <p>Marca: Logitech</p>
+                        <p class="precio">$55.990 <span class="u-pull-right">$45.990</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar Al
+                            Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="{% static 'core/imgd/deathstrading.jpg' %}" class="u-full-width" alt="Death Strading">
+                    <div class="info-card">
+                        <img src="{% static 'core/imgd/estrellas.png' %}" class="u-full-width">
+                        <h4>Death Strading</h4>
+                        <p>Plataforma: PS5</p>
+                        <p class="precio">$65.990 <span class="u-pull-right">$57.990</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar Al
+                            Carrito</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'core/imgd/control.jpg' %}" class="u-full-width" alt="Mando PS5">
+                    <div class="info-card">
+                        <img src="{% static 'core/imgd/estrellas.png' %}" class="u-full-width">
+                        <h4>Mando PS5 White</h4>
+                        <p>Marca: Sony</p>
+                        <p class="precio">$65.990 <span class="u-pull-right">$59.990</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar Al
+                            Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--Carousel-->
+<div class="container mt-2">
+    <div id="carouselFeatures" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselFeatures" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselFeatures" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselFeatures" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'core/imgd/logi.jpg' %}" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'core/imgd/game.jpg' %}" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'core/imgd/geforc.jpg' %}" class="d-block w-100" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Carousel-->
+{% endblock %}
